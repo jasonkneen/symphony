@@ -25,6 +25,9 @@ hooks:
     fi
   before_remove: |
     cd elixir && mise exec -- mix workspace.before_remove
+server:
+  host: "127.0.0.1"
+  port: 4000
 agent:
   max_concurrent_agents: 10
   max_turns: 20
